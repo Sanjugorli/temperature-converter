@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <link rel="stylesheet" href="tem.css" />
+    </head>
+    <body>
+        <div class="box" ng-app ng-init="celsius=0;diff=32">
+            <p class="title">Tempareture Scale</p>
+            <div class="body">
+                <p class="p1"><strong>Celcius: </strong><input type="text" ng-model="celsius"></p>
+                <p class="p2"><strong>Farenhite: </strong><strong class="result">{{ celsius*1.8+diff }}<sup>°</sup>F</strong></p>
+            </div>
+            
+            <p class="footer">AT_mAh</p>
+        </div>
+    </body>
+</html>  
+
+
+
